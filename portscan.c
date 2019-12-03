@@ -1,3 +1,7 @@
+/*
+	Copyright 2019 Eliseu Silva Torres
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -22,16 +22,16 @@ main(int argc, char **argv)
 	
 	if (argc < 2) {
 		printf("IP address is missing!\n");
-		exit(-1);
+		exit(EXIT_FAILURE);
 	}
 	
 	host = argv[1];
 	printf("Port	Status\n");
-	for (port = 1; port < MAX_NUM_PORT; port++) {
+	for (port = 1; port <= MAX_NUM_PORT; port++) {
 		sfd = socket(AF_INET, SOCK_STREAM, 0);
 		if (sfd == -1) {
 			printf("socket error\n");
-			exit(-1);
+			exit(EXIT_FAILURE);
 		}
 		
 		addr.sin_family = AF_INET;

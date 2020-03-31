@@ -40,7 +40,7 @@ main(int argc, char **argv)
 		
 		cfd = connect(sfd, (struct sockaddr *) &addr, sizeof addr);
 		if (cfd == 0) 
-			printf("%i	Open\n", port);				
+			printf("%i \t\t\tOpen\n", port);				
 		
 		close(sfd);
 		close(cfd);
